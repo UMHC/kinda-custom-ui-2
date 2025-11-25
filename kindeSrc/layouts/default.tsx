@@ -9,11 +9,14 @@ const styles: {
     alignItems: "center",
     justifyContent: "center",
     minHeight: "100vh",
+    width: "100vw",
     backgroundImage: "url(https://umhc.org.uk/images/side-panel.jpeg)",
     backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
     padding: "2rem",
+    position: "relative",
   },
   contentWrapper: {
     backgroundColor: "rgba(255, 255, 255, 0.95)",
@@ -22,6 +25,8 @@ const styles: {
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     width: "100%",
     maxWidth: "500px",
+    position: "relative",
+    zIndex: 1,
   },
 };
 
