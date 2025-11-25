@@ -51,11 +51,14 @@ export const getStyles = (): string => `
   }
 
   html, body {
-    font-family: ${kindeVariables.baseFontFamily};
+    font-family: ${kindeVariables.baseFontFamily} !important;
   }
 
-  * {
-    font-family: inherit;
+  body *, 
+  [data-kinde-root] *,
+  [data-kinde-widget] *,
+  h1, h2, h3, h4, h5, h6, p, span, div, input, button, label {
+    font-family: ${kindeVariables.baseFontFamily} !important;
   }
 
   [data-kinde-choice-separator] {
