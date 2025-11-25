@@ -13,7 +13,29 @@ const kindeVariables = {
 } as const;
 
 export const getStyles = (): string => `
-  @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap);
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://umhc.org.uk/fonts/OpenSans-Regular.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://umhc.org.uk/fonts/OpenSans-SemiBold.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://umhc.org.uk/fonts/OpenSans-Bold.woff2) format('woff2');
+  }
 
   :root {
     --kinde-base-font-family: ${kindeVariables.baseFontFamily};
