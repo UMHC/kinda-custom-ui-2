@@ -8,17 +8,20 @@ const styles: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh",
+    minHeight: "100vh",
     backgroundImage: "url(https://umhc.org.uk/images/side-panel.jpeg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
+    padding: "2rem",
   },
   contentWrapper: {
     backgroundColor: "rgba(255, 255, 255, 0.95)",
     borderRadius: "1rem",
-    padding: "2rem",
+    padding: "3rem",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    width: "100%",
+    maxWidth: "500px",
   },
 };
 
