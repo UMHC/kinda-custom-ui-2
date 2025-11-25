@@ -92,7 +92,7 @@ export const getStyles = (): string => `
   }
 
   /* Mobile responsive styles */
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     [data-side-panel] {
       display: none !important;
     }
