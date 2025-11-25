@@ -27,7 +27,7 @@ export const Root = ({
         <meta content={getKindeCSRF()} name="csrf-token" />
         <meta content="light" name="color-scheme" />
         <meta content="nopagereadaloud" name="google" />
-        <title>{context.widget.content.page_title}</title>
+        <title>UMHC Authentication</title>
 
         <link href={getSVGFaviconUrl()} rel="icon" type="image/svg+xml" />
         {getKindeRequiredCSS()}
