@@ -55,6 +55,19 @@ export const getStyles = (): string => `
 
   html, body {
     font-family: ${kindeVariables.baseFontFamily} !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  [data-layout-container] {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    [data-layout-container] {
+      min-height: -webkit-fill-available;
+    }
   }
 
   body *, 
