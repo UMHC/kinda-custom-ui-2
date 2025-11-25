@@ -100,6 +100,8 @@ export const getStyles = (): string => `
     [data-layout-container] {
       flex-direction: column !important;
       padding: 1rem !important;
+      background-image: none !important;
+      background-color: #FFFCF7 !important;
     }
 
     [data-layout-container] > div {
