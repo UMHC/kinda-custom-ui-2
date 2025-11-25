@@ -5,7 +5,7 @@ const kindeVariables = {
   buttonPrimaryBackgroundColor: "#2E4E39",
   buttonPrimaryColor: "#fff",
   buttonBorderRadius: "99px",
-  buttonSecondaryBackgroundColor: "#fff",
+  buttonSecondaryBackgroundColor: "#B15539",
   buttonSecondaryBorderWidth: "1px",
   buttonSecondaryBorderColor: "#e9edec",
   buttonSecondaryBorderStyle: "solid",
