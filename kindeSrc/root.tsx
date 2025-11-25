@@ -30,6 +30,27 @@ export const Root = ({
         <title>{context.widget.content.page_title}</title>
 
         <link href={getSVGFaviconUrl()} rel="icon" type="image/svg+xml" />
+        <link 
+          rel="preload" 
+          href="https://umhc.org.uk/fonts/OpenSans-Regular.woff2" 
+          as="font" 
+          type="font/woff2" 
+          crossOrigin="anonymous" 
+        />
+        <link 
+          rel="preload" 
+          href="https://umhc.org.uk/fonts/OpenSans-SemiBold.woff2" 
+          as="font" 
+          type="font/woff2" 
+          crossOrigin="anonymous" 
+        />
+        <link 
+          rel="preload" 
+          href="https://umhc.org.uk/fonts/OpenSans-Bold.woff2" 
+          as="font" 
+          type="font/woff2" 
+          crossOrigin="anonymous" 
+        />
         {getKindeRequiredCSS()}
         {getKindeRequiredJS()}
         <style>{getStyles()}</style>

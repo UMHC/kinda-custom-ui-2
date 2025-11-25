@@ -50,6 +50,14 @@ export const getStyles = (): string => `
     --kinde-button-secondary-border-radius: ${kindeVariables.buttonSecondaryBorderRadius};
   }
 
+  html, body {
+    font-family: ${kindeVariables.baseFontFamily};
+  }
+
+  * {
+    font-family: inherit;
+  }
+
   [data-kinde-choice-separator] {
     text-transform: uppercase;
   }
