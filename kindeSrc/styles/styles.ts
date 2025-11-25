@@ -86,13 +86,28 @@ export const getStyles = (): string => `
 
     [data-layout-container] {
       flex-direction: column !important;
-      padding: 1rem;
+      padding: 1rem !important;
+    }
+
+    [data-layout-container] > div {
+      padding: 1.5rem !important;
+      max-width: 100% !important;
     }
 
     main[style*="minWidth"] {
       min-width: auto !important;
       width: 100% !important;
-      padding: 1rem !important;
+      padding: 0 !important;
+    }
+
+    main {
+      max-width: 100% !important;
+    }
+
+    input, [data-kinde-widget] input {
+      width: 100% !important;
+      min-width: 100% !important;
+      box-sizing: border-box !important;
     }
 
     h2 {
@@ -102,15 +117,23 @@ export const getStyles = (): string => `
 
   @media (max-width: 480px) {
     [data-layout-container] {
-      padding: 0.5rem;
+      padding: 0.5rem !important;
+    }
+
+    [data-layout-container] > div {
+      padding: 1rem !important;
     }
 
     main > div {
-      padding: 1rem !important;
+      padding: 0 !important;
     }
 
     h2 {
       font-size: 1.25rem !important;
+    }
+
+    input, [data-kinde-widget] input {
+      font-size: 16px !important;
     }
   }
 `;
