@@ -1,7 +1,6 @@
 // CSS Variables configuration
 const kindeVariables = {
-  baseFontFamily:
-    "-apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, Segoe UI, Roboto, sans-serif",
+  baseFontFamily: "'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, Helvetica, Arial, sans-serif",
   controlSelectTextBorderRadius: "99px",
   buttonPrimaryBackgroundColor: "dodgerblue",
   buttonPrimaryColor: "#fff",
@@ -14,6 +13,8 @@ const kindeVariables = {
 } as const;
 
 export const getStyles = (): string => `
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
   :root {
     --kinde-base-font-family: ${kindeVariables.baseFontFamily};
     --kinde-control-select-text-border-radius: ${kindeVariables.controlSelectTextBorderRadius};
