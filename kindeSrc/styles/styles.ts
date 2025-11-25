@@ -77,4 +77,40 @@ export const getStyles = (): string => `
     width: 3rem;
     height: 3rem;
   }
+
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    [data-side-panel] {
+      display: none !important;
+    }
+
+    [data-layout-container] {
+      flex-direction: column !important;
+      padding: 1rem;
+    }
+
+    main[style*="minWidth"] {
+      min-width: auto !important;
+      width: 100% !important;
+      padding: 1rem !important;
+    }
+
+    h2 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    [data-layout-container] {
+      padding: 0.5rem;
+    }
+
+    main > div {
+      padding: 1rem !important;
+    }
+
+    h2 {
+      font-size: 1.25rem !important;
+    }
+  }
 `;

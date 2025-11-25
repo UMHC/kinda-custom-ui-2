@@ -9,7 +9,8 @@ const styles: {
   description: React.CSSProperties;
 } = {
   loginForm: {
-    minWidth: "400px",
+    width: "100%",
+    maxWidth: "400px",
     margin: "0 auto",
     display: "flex",
     flexDirection: "column",

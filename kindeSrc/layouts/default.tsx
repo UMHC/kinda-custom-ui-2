@@ -25,9 +25,9 @@ const styles: {
 
 export const DefaultLayout = (props: { children: React.ReactNode }) => {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} data-layout-container>
       {props.children}
-      <div style={styles.sidePanel}>
+      <div style={styles.sidePanel} data-side-panel>
         <img 
           src="https://umhc.org.uk/images/side-panel.jpeg" 
           alt="University of Manchester Hockey Club" 
